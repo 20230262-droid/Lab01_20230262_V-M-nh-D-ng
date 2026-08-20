@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:ui="jakarta.faces.facelets">
+<body>
+<ui:composition>
+    <aside class="side">
+        <div class="logo">🌸 Pink Manager</div>
+        <div class="small">Lab 8 - Jakarta Faces</div>
+        <nav class="nav">
+            <h:link outcome="/index" value="🏠  Trang chủ"/>
+            <h:link outcome="/sinhvien-list" value="🎓  Sinh viên"/>
+            <h:link outcome="/sach-form" value="📚  Sách"/>
+            <h:link outcome="/product-form" value="🛍️  Sản phẩm"/>
+            <h:form>
+                <h:commandLink action="#{loginBean.logout}" value="🚪  Đăng xuất"/>
+            </h:form>
+        </nav>
+    </aside>
+</ui:composition>
+</body>
+</html>
